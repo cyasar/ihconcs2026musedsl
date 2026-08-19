@@ -143,7 +143,7 @@ export const Slide24_FinalVision: React.FC<SlideProps> = ({ lang }) => (
     </div>
     
     <div style={{ marginTop: '3rem', fontSize: '1.2rem', color: 'var(--text-secondary)', display: 'flex', gap: '2rem', alignItems: 'center' }}>
-      <span>📧 cumaliyasar@comu.edu.tr</span>
+      <span>📧 cyasar@comu.edu.tr</span>
       <span>•</span>
       <span>⭐ github.com/musedsl</span>
     </div>
