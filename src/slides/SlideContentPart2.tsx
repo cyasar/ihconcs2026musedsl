@@ -27,7 +27,7 @@ export const Slide10_MIP: React.FC<SlideProps> = ({ lang }) => {
             maxWidth: '100%', maxHeight: '450px' // added constraint to prevent overflow
           }}>
             <img 
-              src="/mip_protocol.jpg" 
+              src="./mip_protocol.jpg" 
               alt="MIP Protocol Pipeline" 
               style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block', filter: 'contrast(1.1)' }} 
             />

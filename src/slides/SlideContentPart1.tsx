@@ -35,7 +35,7 @@ export const Slide02_Hook: React.FC<SlideProps> = ({ lang }) => (
     </div>
     
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <img src="/diagram_concept.jpg" alt="Fossil Network Concept Diagram" style={{ width: '100%', maxWidth: '600px', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.1)', boxShadow: '0 20px 40px rgba(0, 0, 0, 0.5)' }} />
+      <img src="./diagram_concept.jpg" alt="Fossil Network Concept Diagram" style={{ width: '100%', maxWidth: '600px', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.1)', boxShadow: '0 20px 40px rgba(0, 0, 0, 0.5)' }} />
     </div>
   </div>
 );
@@ -469,7 +469,7 @@ export const Slide07_MuseDSLIdea: React.FC<SlideProps> = ({ lang }) => {
             boxShadow: '0 0 30px rgba(255, 255, 255, 0.1)', border: '2px solid rgba(255,255,255,0.2)'
           }}>
             <img 
-              src="/musedsl_sketch.jpg" 
+              src="./musedsl_sketch.jpg" 
               alt="MuseDSL Architecture Sketch" 
               style={{ width: '100%', height: 'auto', display: 'block' }} 
             />
