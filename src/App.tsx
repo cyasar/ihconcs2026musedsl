@@ -157,6 +157,18 @@ function App() {
       </div>
 
       <div className="keyboard-hint">{t.pressQuestionMark}</div>
+
+      {/* Mobile Rotate Overlay */}
+      <div className="mobile-rotate-overlay">
+        <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>📱🔄</div>
+        <h2 style={{ color: 'white' }}>{lang === 'en' ? 'Please Rotate Your Device' : 'Lütfen Cihazınızı Yan Çevirin'}</h2>
+        <p style={{ color: 'var(--text-secondary)' }}>
+          {lang === 'en' 
+            ? 'This interactive presentation is designed for landscape viewing.' 
+            : 'Bu etkileşimli sunum yatay (manzara) kullanım için tasarlanmıştır.'}
+        </p>
+      </div>
+
     </div>
   )
 }

@@ -118,3 +118,38 @@ button.active {
   font-size: 0.8rem;
   z-index: 100;
 }
+
+/* Mobile Responsiveness & Rotate Overlay */
+.mobile-rotate-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: var(--bg-color);
+  z-index: 9999;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 900px) and (orientation: portrait) {
+  .mobile-rotate-overlay {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.2rem; }
+  
+  .slide-content {
+    padding: 1rem;
+    padding-top: 4rem;
+  }
+
+  .slide-controls {
+    bottom: 0.5rem;
+  }
+}
