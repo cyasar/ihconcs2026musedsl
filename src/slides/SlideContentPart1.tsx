@@ -463,15 +463,16 @@ export const Slide07_MuseDSLIdea: React.FC<SlideProps> = ({ lang }) => {
       <div style={{ display: 'flex', gap: '4rem', width: '100%', alignItems: 'stretch', flex: 1 }}>
         
         {/* Left: Generated Architecture Sketch Image */}
-        <div style={{ flex: 1.2, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <div style={{ flex: 1.2, display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
           <div style={{ 
             position: 'relative', borderRadius: '16px', overflow: 'hidden', 
-            boxShadow: '0 0 30px rgba(255, 255, 255, 0.1)', border: '2px solid rgba(255,255,255,0.2)'
+            boxShadow: '0 0 30px rgba(255, 255, 255, 0.1)', border: '2px solid rgba(255,255,255,0.2)',
+            maxHeight: '100%', display: 'flex', justifyContent: 'center'
           }}>
             <img 
               src="./musedsl_sketch.jpg" 
               alt="MuseDSL Architecture Sketch" 
-              style={{ width: '100%', height: 'auto', display: 'block' }} 
+              style={{ maxWidth: '100%', maxHeight: '65vh', objectFit: 'contain', display: 'block' }} 
             />
             {/* Subtle vintage overlay to blend with dark mode */}
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0) 50%, rgba(255,255,255,0.05) 100%)', pointerEvents: 'none' }} />
