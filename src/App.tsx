@@ -108,8 +108,12 @@ function App() {
       }}>
         <img src="./ihconcs_logo.png" alt="IHCONCS Logo" style={{ height: '30px', objectFit: 'contain' }} />
         <div style={{ textAlign: 'center' }}>
-          <h4 style={{ margin: '0 0 0.1rem 0', color: 'var(--text-primary)', fontSize: '0.9rem' }}>The International Conference on Computer Sciences (IHCONCS 2026)</h4>
-          <p style={{ margin: '0', fontSize: '0.7rem', color: 'var(--text-secondary)' }}>September 17-18, 2026 • Zagreb, Croatia (Hybrid)</p>
+          <h4 style={{ margin: '0 0 0.1rem 0', color: 'var(--text-primary)', fontSize: '0.9rem' }}>
+            {lang === 'en' ? 'The International Conference on Computer Sciences (IHCONCS 2026)' : 'Uluslararası Bilgisayar Bilimleri Konferansı (IHCONCS 2026)'}
+          </h4>
+          <p style={{ margin: '0', fontSize: '0.7rem', color: 'var(--text-secondary)' }}>
+            {lang === 'en' ? 'September 17-18, 2026 • Zagreb, Croatia (Hybrid)' : '17-18 Eylül 2026 • Zagreb, Hırvatistan (Hibrit)'}
+          </p>
         </div>
         <img src="./ihconcs.png" alt="IHCONCS" style={{ height: '30px', objectFit: 'contain' }} />
       </div>

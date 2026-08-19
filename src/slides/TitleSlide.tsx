@@ -9,8 +9,12 @@ export const TitleSlide: React.FC<SlideProps> = ({ lang }) => {
       <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', marginBottom: 'auto', padding: '1rem', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)' }}>
         <img src="./ihconcs_logo.png" alt="IHCONCS Logo" style={{ height: '60px', objectFit: 'contain' }} />
         <div style={{ textAlign: 'center' }}>
-          <h4 style={{ margin: '0 0 0.2rem 0', color: 'var(--text-primary)' }}>The International Conference on Computer Sciences (IHCONCS 2026)</h4>
-          <p style={{ margin: '0', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>September 17-18, 2026 • Zagreb, Croatia (Hybrid)</p>
+          <h4 style={{ margin: '0 0 0.2rem 0', color: 'var(--text-primary)' }}>
+            {lang === 'en' ? 'The International Conference on Computer Sciences (IHCONCS 2026)' : 'Uluslararası Bilgisayar Bilimleri Konferansı (IHCONCS 2026)'}
+          </h4>
+          <p style={{ margin: '0', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+            {lang === 'en' ? 'September 17-18, 2026 • Zagreb, Croatia (Hybrid)' : '17-18 Eylül 2026 • Zagreb, Hırvatistan (Hibrit)'}
+          </p>
         </div>
         <img src="./ihconcs.png" alt="IHCONCS" style={{ height: '60px', objectFit: 'contain' }} />
       </div>
@@ -33,7 +37,9 @@ export const TitleSlide: React.FC<SlideProps> = ({ lang }) => {
 
         <div style={{ padding: '1.5rem', background: 'var(--bg-secondary)', borderRadius: '12px', display: 'inline-block', border: '1px solid var(--border-color)', boxShadow: '0 10px 30px rgba(0,0,0,0.3)' }}>
           <p style={{ margin: '0 0 0.5rem 0', fontWeight: 'bold', fontSize: '1.2rem', color: 'var(--text-primary)' }}>Cumali Yaşar, Zafer Karadayı, Ayten Çalık, Emin Ulugergerli</p>
-          <p style={{ margin: '0', color: 'var(--text-secondary)' }}>Çanakkale Onsekiz Mart University, Türkiye</p>
+          <p style={{ margin: '0', color: 'var(--text-secondary)' }}>
+            {lang === 'en' ? 'Çanakkale Onsekiz Mart University, Türkiye' : 'Çanakkale Onsekiz Mart Üniversitesi, Türkiye'}
+          </p>
         </div>
       </div>
 

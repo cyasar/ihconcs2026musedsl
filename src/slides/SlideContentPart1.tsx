@@ -52,7 +52,7 @@ export const Slide03_InvisibleProblem: React.FC<SlideProps> = ({ lang }) => (
         <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
           {['Museum A', 'Museum B', 'Museum C', 'Museum D', 'Museum E'].map(m => (
             <div key={m} style={{ padding: '0.8rem', background: 'var(--bg-secondary)', border: '1px solid var(--border-color)', borderRadius: '6px', fontSize: '0.9rem' }}>
-              <strong>{m}</strong><br/><small style={{ color: 'var(--text-secondary)' }}>Local Inventory</small>
+              <strong>{m}</strong><br/><small style={{ color: 'var(--text-secondary)' }}>{lang === 'en' ? 'Local Inventory' : 'Yerel Envanter'}</small>
             </div>
           ))}
         </div>
@@ -351,14 +351,14 @@ export const Slide06_RemainingGap: React.FC<SlideProps> = ({ lang }) => {
             {/* Museum A */}
             <g transform="translate(150, 200)">
               <rect x="-60" y="-40" width="120" height="80" rx="8" fill="rgba(255,255,255,0.05)" stroke="var(--text-secondary)" strokeWidth="2" />
-              <text x="0" y="0" fill="white" textAnchor="middle" fontSize="18" fontWeight="bold">Museum A</text>
+              <text x="0" y="0" fill="white" textAnchor="middle" fontSize="18" fontWeight="bold">{lang === 'en' ? 'Museum A' : 'Müze A'}</text>
               <circle cx="60" cy="0" r="6" fill="var(--accent-color)" />
             </g>
 
             {/* Museum B */}
             <g transform="translate(650, 200)">
               <rect x="-60" y="-40" width="120" height="80" rx="8" fill="rgba(255,255,255,0.05)" stroke="var(--text-secondary)" strokeWidth="2" />
-              <text x="0" y="0" fill="white" textAnchor="middle" fontSize="18" fontWeight="bold">Museum B</text>
+              <text x="0" y="0" fill="white" textAnchor="middle" fontSize="18" fontWeight="bold">{lang === 'en' ? 'Museum B' : 'Müze B'}</text>
               <circle cx="-60" cy="0" r="6" fill="var(--accent-color)" />
             </g>
 
@@ -381,7 +381,7 @@ export const Slide06_RemainingGap: React.FC<SlideProps> = ({ lang }) => {
             <g style={{ opacity: step === 3 ? 1 : 0.1, transition: 'opacity 0.5s' }}>
               <path d="M 210 200 Q 400 300 590 200" fill="none" stroke="var(--state-accept)" strokeWidth="4" />
               <rect x="360" y="230" width="80" height="80" fill="#111" stroke="var(--text-secondary)" strokeWidth="2" />
-              <text x="400" y="265" fill="var(--state-accept)" textAnchor="middle" fontSize="14">Black Box</text>
+              <text x="400" y="265" fill="var(--state-accept)" textAnchor="middle" fontSize="14">{lang === 'en' ? 'Black Box' : 'Kara Kutu'}</text>
               <text x="400" y="285" fill="var(--state-error)" textAnchor="middle" fontSize="16" fontWeight="bold">WHY?</text>
             </g>
 
@@ -614,8 +614,8 @@ export const Slide08_Federation: React.FC<SlideProps> = ({ lang }) => {
               {/* Central Server */}
               <g transform="translate(600, 140)">
                 <rect x="-80" y="-90" width="160" height="180" rx="8" fill="rgba(255, 152, 0, 0.2)" stroke="var(--state-warning)" strokeWidth="4" />
-                <text x="0" y="-100" fill="var(--state-warning)" textAnchor="middle" fontSize="16" fontWeight="bold">Central Aggregator</text>
-                <text x="0" y="-10" fill="white" textAnchor="middle" fontSize="14">Massive DB</text>
+                <text x="0" y="-100" fill="var(--state-warning)" textAnchor="middle" fontSize="16" fontWeight="bold">{lang === 'en' ? 'Central Aggregator' : 'Merkezi Toplayýcý'}</text>
+                <text x="0" y="-10" fill="white" textAnchor="middle" fontSize="14">{lang === 'en' ? 'Massive DB' : 'Devasa Veritabaný'}</text>
                 <text x="0" y="20" fill="white" textAnchor="middle" fontSize="12">(Slow, Heavy)</text>
               </g>
             </g>
@@ -627,7 +627,7 @@ export const Slide08_Federation: React.FC<SlideProps> = ({ lang }) => {
                 <g key={`fed-mus-${i}`} transform={`translate(${x}, 60)`}>
                   <rect x="-50" y="-35" width="100" height="70" rx="8" fill="rgba(0, 188, 212, 0.1)" stroke="var(--accent-color)" strokeWidth="2" />
                   <text x="0" y="-45" fill="var(--accent-color)" textAnchor="middle" fontSize="14" fontWeight="bold">Museum {i+1}</text>
-                  <text x="0" y="5" fill="white" textAnchor="middle" fontSize="12">Local DB</text>
+                  <text x="0" y="5" fill="white" textAnchor="middle" fontSize="12">{lang === 'en' ? 'Local DB' : 'Yerel Veritabaný'}</text>
                 </g>
               ))}
 
@@ -640,7 +640,7 @@ export const Slide08_Federation: React.FC<SlideProps> = ({ lang }) => {
               {/* User / Curator */}
               <g transform="translate(150, 200)">
                 <circle cx="0" cy="0" r="30" fill="rgba(255,255,255,0.1)" stroke="var(--accent-color)" strokeWidth="2" />
-                <text x="0" y="45" fill="white" textAnchor="middle" fontSize="14">Curator Query</text>
+                <text x="0" y="45" fill="white" textAnchor="middle" fontSize="14">{lang === 'en' ? 'Curator Query' : 'Küratör Sorgusu'}</text>
               </g>
 
               {/* Example Query Bubble */}
@@ -659,7 +659,7 @@ export const Slide08_Federation: React.FC<SlideProps> = ({ lang }) => {
               {/* Fast Agent Orb */}
               <g style={{ animation: 'moveAgent 6s infinite ease-in-out' }}>
                 <circle cx="0" cy="0" r="10" fill="var(--accent-color)" style={{ filter: 'drop-shadow(0 0 10px var(--accent-color))' }} />
-                <text x="0" y="-15" fill="var(--accent-color)" textAnchor="middle" fontSize="12" fontWeight="bold">Agent</text>
+                <text x="0" y="-15" fill="var(--accent-color)" textAnchor="middle" fontSize="12" fontWeight="bold">{lang === 'en' ? 'Agent' : 'Ajan'}</text>
               </g>
             </g>
 
