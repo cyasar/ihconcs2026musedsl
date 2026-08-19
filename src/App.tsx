@@ -121,7 +121,10 @@ function App() {
       <CurrentSlide lang={lang} />
 
       <div className="slide-controls" style={{ zIndex: 150 }}>
-        <button onClick={handlePrev} disabled={currentSlideIndex === 0}>
+        <button onClick={() => setCurrentSlideIndex(0)} disabled={currentSlideIndex === 0} title={lang === 'en' ? 'First Slide' : 'İlk Slayt'}>
+          |&larr;
+        </button>
+        <button onClick={handlePrev} disabled={currentSlideIndex === 0} title={lang === 'en' ? 'Previous Slide' : 'Önceki Slayt'}>
           &larr;
         </button>
         <select 
@@ -145,8 +148,11 @@ function App() {
             </option>
           ))}
         </select>
-        <button onClick={handleNext} disabled={currentSlideIndex === slides.length - 1}>
+        <button onClick={handleNext} disabled={currentSlideIndex === slides.length - 1} title={lang === 'en' ? 'Next Slide' : 'Sonraki Slayt'}>
           &rarr;
+        </button>
+        <button onClick={() => setCurrentSlideIndex(slides.length - 1)} disabled={currentSlideIndex === slides.length - 1} title={lang === 'en' ? 'Last Slide' : 'Son Slayt'}>
+          &rarr;|
         </button>
       </div>
 
