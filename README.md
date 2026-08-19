@@ -85,5 +85,8 @@ If you want to deploy this directly to GitHub Pages, you can use the `gh-pages` 
 
 ---
 
-## 📄 License
+## 📄 License & Data Provenance
 This project is provided for academic demonstration purposes for IHCONCS 2026.
+
+> **Important Data Provenance Note:**
+> Interactive museum records used in the presentation simulation are synthetic illustrative data and must not be interpreted as additional experimental results.

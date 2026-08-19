@@ -135,6 +135,13 @@ export const SimulationSlide: React.FC<SlideProps> = ({ lang }) => {
         </div>
       </div>
 
+      {/* Disclaimer */}
+      <div style={{ position: 'absolute', bottom: '1rem', left: '50%', transform: 'translateX(-50%)', fontSize: '0.8rem', color: 'var(--text-secondary)', fontStyle: 'italic', opacity: 0.7 }}>
+        * {lang === 'en' 
+            ? 'Interactive museum records used in this simulation are synthetic illustrative data.' 
+            : 'Bu simülasyonda kullanılan etkileşimli müze kayıtları, sentetik ve yalnızca gösterim amaçlı verilerdir.'}
+      </div>
+
     </div>
   );
 };
