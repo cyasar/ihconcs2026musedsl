@@ -351,14 +351,14 @@ export const Slide06_RemainingGap: React.FC<SlideProps> = ({ lang }) => {
             {/* Museum A */}
             <g transform="translate(150, 200)">
               <rect x="-60" y="-40" width="120" height="80" rx="8" fill="rgba(255,255,255,0.05)" stroke="var(--text-secondary)" strokeWidth="2" />
-              <text x="0" y="0" fill="white" textAnchor="middle" fontSize="18" fontWeight="bold">{lang === 'en' ? 'Museum A' : 'Müze A'}</text>
+              <text x="0" y="0" fill="white" textAnchor="middle" fontSize="18" fontWeight="bold">{lang === 'en' ? 'Museum A' : 'Mï¿½ze A'}</text>
               <circle cx="60" cy="0" r="6" fill="var(--accent-color)" />
             </g>
 
             {/* Museum B */}
             <g transform="translate(650, 200)">
               <rect x="-60" y="-40" width="120" height="80" rx="8" fill="rgba(255,255,255,0.05)" stroke="var(--text-secondary)" strokeWidth="2" />
-              <text x="0" y="0" fill="white" textAnchor="middle" fontSize="18" fontWeight="bold">{lang === 'en' ? 'Museum B' : 'Müze B'}</text>
+              <text x="0" y="0" fill="white" textAnchor="middle" fontSize="18" fontWeight="bold">{lang === 'en' ? 'Museum B' : 'Mï¿½ze B'}</text>
               <circle cx="-60" cy="0" r="6" fill="var(--accent-color)" />
             </g>
 
@@ -614,8 +614,8 @@ export const Slide08_Federation: React.FC<SlideProps> = ({ lang }) => {
               {/* Central Server */}
               <g transform="translate(600, 140)">
                 <rect x="-80" y="-90" width="160" height="180" rx="8" fill="rgba(255, 152, 0, 0.2)" stroke="var(--state-warning)" strokeWidth="4" />
-                <text x="0" y="-100" fill="var(--state-warning)" textAnchor="middle" fontSize="16" fontWeight="bold">{lang === 'en' ? 'Central Aggregator' : 'Merkezi Toplayýcý'}</text>
-                <text x="0" y="-10" fill="white" textAnchor="middle" fontSize="14">{lang === 'en' ? 'Massive DB' : 'Devasa Veritabaný'}</text>
+                <text x="0" y="-100" fill="var(--state-warning)" textAnchor="middle" fontSize="16" fontWeight="bold">{lang === 'en' ? 'Central Aggregator' : 'Merkezi Toplayï¿½cï¿½'}</text>
+                <text x="0" y="-10" fill="white" textAnchor="middle" fontSize="14">{lang === 'en' ? 'Massive DB' : 'Devasa Veritabanï¿½'}</text>
                 <text x="0" y="20" fill="white" textAnchor="middle" fontSize="12">(Slow, Heavy)</text>
               </g>
             </g>
@@ -627,7 +627,7 @@ export const Slide08_Federation: React.FC<SlideProps> = ({ lang }) => {
                 <g key={`fed-mus-${i}`} transform={`translate(${x}, 60)`}>
                   <rect x="-50" y="-35" width="100" height="70" rx="8" fill="rgba(0, 188, 212, 0.1)" stroke="var(--accent-color)" strokeWidth="2" />
                   <text x="0" y="-45" fill="var(--accent-color)" textAnchor="middle" fontSize="14" fontWeight="bold">Museum {i+1}</text>
-                  <text x="0" y="5" fill="white" textAnchor="middle" fontSize="12">{lang === 'en' ? 'Local DB' : 'Yerel Veritabaný'}</text>
+                  <text x="0" y="5" fill="white" textAnchor="middle" fontSize="12">{lang === 'en' ? 'Local DB' : 'Yerel Veritabanï¿½'}</text>
                 </g>
               ))}
 
@@ -640,7 +640,7 @@ export const Slide08_Federation: React.FC<SlideProps> = ({ lang }) => {
               {/* User / Curator */}
               <g transform="translate(150, 200)">
                 <circle cx="0" cy="0" r="30" fill="rgba(255,255,255,0.1)" stroke="var(--accent-color)" strokeWidth="2" />
-                <text x="0" y="45" fill="white" textAnchor="middle" fontSize="14">{lang === 'en' ? 'Curator Query' : 'Küratör Sorgusu'}</text>
+                <text x="0" y="45" fill="white" textAnchor="middle" fontSize="14">{lang === 'en' ? 'Curator Query' : 'Kï¿½ratï¿½r Sorgusu'}</text>
               </g>
 
               {/* Example Query Bubble */}

@@ -122,20 +122,20 @@ export const Slide11_MCORE: React.FC<SlideProps> = ({ lang }) => {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', zIndex: 2 }}>
           {/* Museum 1 */}
           <div style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.1)', padding: '1.2rem', borderRadius: '12px', width: '260px', boxShadow: '0 5px 15px rgba(0,0,0,0.5)' }}>
-            <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>{lang === 'en' ? 'Museum A' : 'Müze A'}</div>
+            <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>{lang === 'en' ? 'Museum A' : 'Mï¿½ze A'}</div>
             <div style={{ color: '#E91E63', fontWeight: 'bold', fontFamily: 'monospace', fontSize: '1.1rem' }}>LIDO XML</div>
             <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginTop: '0.5rem', opacity: 0.7 }}>&lt;lido:objectPublishedID&gt;<br/>&lt;lido:eventDate&gt;</div>
           </div>
           {/* Museum 2 */}
           <div style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.1)', padding: '1.2rem', borderRadius: '12px', width: '260px', boxShadow: '0 5px 15px rgba(0,0,0,0.5)' }}>
-            <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>{lang === 'en' ? 'Museum B' : 'Müze B'}</div>
+            <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>{lang === 'en' ? 'Museum B' : 'Mï¿½ze B'}</div>
             <div style={{ color: '#4CAF50', fontWeight: 'bold', fontFamily: 'monospace', fontSize: '1.1rem' }}>CIDOC-CRM (RDF)</div>
             <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginTop: '0.5rem', opacity: 0.7 }}>crm:E22_Man-Made_Object<br/>crm:P43_has_dimension</div>
           </div>
           {/* Museum 3 */}
           <div style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.1)', padding: '1.2rem', borderRadius: '12px', width: '260px', boxShadow: '0 5px 15px rgba(0,0,0,0.5)' }}>
-            <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>{lang === 'en' ? 'Museum C' : 'Müze C'}</div>
-            <div style={{ color: '#FFC107', fontWeight: 'bold', fontFamily: 'monospace', fontSize: '1.1rem' }}>{lang === 'en' ? 'Custom SQL DB' : 'Özel SQL VT'}</div>
+            <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>{lang === 'en' ? 'Museum C' : 'Mï¿½ze C'}</div>
+            <div style={{ color: '#FFC107', fontWeight: 'bold', fontFamily: 'monospace', fontSize: '1.1rem' }}>{lang === 'en' ? 'Custom SQL DB' : 'ï¿½zel SQL VT'}</div>
             <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginTop: '0.5rem', opacity: 0.7 }}>SELECT item_name, year <br/>FROM artifacts_table</div>
           </div>
         </div>
@@ -577,7 +577,7 @@ export const Slide15_Scoring: React.FC<SlideProps> = ({ lang }) => {
                 {/* Weight Slider */}
                 <div style={{ flex: 1 }}>
                   <label style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem', color: '#FFB74D', marginBottom: '0.3rem' }}>
-                    <span>w<sub>{feature.id}</sub> ({lang === 'en' ? 'Weight' : 'Aðýrlýk'}: {feature.w})</span>
+                    <span>w<sub>{feature.id}</sub> ({lang === 'en' ? 'Weight' : 'Aï¿½ï¿½rlï¿½k'}: {feature.w})</span>
                     <span>Norm: {feature.nw.toFixed(2)}</span>
                   </label>
                   <input type="range" min="0" max="100" value={feature.w} onChange={(e) => feature.setW(parseInt(e.target.value))} style={{ width: '100%', accentColor: '#FFB74D' }} />
